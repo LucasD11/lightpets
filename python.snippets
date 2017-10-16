@@ -1,14 +1,13 @@
-snippet now "datetime"
-`!v strftime("%Y-%m-%d %H:%M:%S")`
-endsnippet
-
 snippet head "head of python file"
 #!/usr/bin/python
 # coding=utf-8
-
+# 
+# Date: `!v strftime("%Y-%m-%d %H:%M:%S")`
+# 
+$0
 endsnippet
 
 snippet main "main of python file"
 if __name__ = '__main__':
-    
+    $0
 endsnippet
