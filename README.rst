@@ -10,6 +10,6 @@ Install
 
 Add code below to your .vimrc if you use **Bundle** as vim plugin manager.
 
-.. code: shell
+.. code:: shell
 
    Bundle 'crazydyz/lightpets'
