@@ -29,3 +29,41 @@ snippet test "Add test code here"
 $0
 # END OF TEST ##################################################################
 endsnippet
+
+snippet cmd "Template of command line tools"
+"""
+Sample Command Line Tool
+"""
+import argparse
+
+
+def parse_args():
+    """
+    Load and check user input
+    """
+    # Define command arguments
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawTextHelpFormatter
+    )
+
+    ${0}# parser.add_argument(
+    #     '--sample', type=str, default='default', dest='sample',
+    #     help="Sample argument"
+    # )
+
+    # parse user input
+    args = parser.parse_args()
+    return args
+
+
+def main():
+    # Load arguments
+    args = parse_args()
+
+    # Do something
+
+
+if __name__ == '__main__':
+    main()
+endsnippet
